@@ -3,9 +3,9 @@ const express = require('express');
 const router = express.Router();
 
 // ************ Controller Require ************
-const mainController = require('../controllers/mainController');
+const {home,search } = require("../controllers/other")
 
-router.???('/', mainController.index); 
-router.???('/search', mainController.search); 
+router.get('/', home ); 
+router.get('/search', search); 
 
 module.exports = router;
